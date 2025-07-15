@@ -35,11 +35,13 @@
 /* Responsividade celular */
 @media(max-width: 480px) {
   .aboutSection {
+    width: 100%;
+    min-width: 80vw;
     padding: 0.5rem;
   }
 
   .title {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .text {

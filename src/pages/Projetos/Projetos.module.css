@@ -18,9 +18,9 @@
   gap: 0.5rem;
   color: var(--black-400);
   width: 100%;
-  max-width: 45rem;
+  max-width: 90vw;
   min-width: 17.5rem;
-  height: 36.25rem;
+  height: auto;
   margin: 0 auto;
   justify-content: flex-start;
   align-items: center;
@@ -91,9 +91,9 @@
 /* Responsividade celular */
 @media(max-width: 480px) {
   .projectsSection {
-    max-width: 40rem;
+    max-width: 95vw;
     width: 100%;
-    padding: 2rem;
+    padding: 0.5rem;
   }
 
   .title {
@@ -105,9 +105,8 @@
   .card {
     padding: 0.5rem;
     width: 100%;
-    max-width: 20rem;
+    max-width: 95vw;
     min-width: 10.5rem;
-    height: 33.25rem;
   }
 
   .links a {
