@@ -46,6 +46,7 @@
 
   .text {
     font-size: 0.8rem;
-    line-height: 100%;
+    line-height: 110%;
+    margin-bottom: 0.5rem;
   }
 }
