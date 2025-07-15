@@ -18,7 +18,7 @@ export function Home() {
           <a href="https://www.instagram.com/shinoda_rie/" target='_blank' rel="noopener noreferrer"><InstagramLogoIcon size="32"/></a>
         </li>
         <li>
-          <a href="/cv_thayna.pdf" target='_blank' rel="noopener noreferrer"><ReadCvLogoIcon size="32"/></a>
+          <a href="/CV_THAYNA_SHINODA.pdf" target='_blank' rel="noopener noreferrer"><ReadCvLogoIcon size="32"/></a>
         </li>
       </ul>
     </div>
