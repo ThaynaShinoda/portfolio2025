@@ -20,10 +20,36 @@ h2 {
   padding: 0.25rem;
   border-radius: 10px;
   transition: all 0.3s ease;
+  animation: slideInFromRight 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateX(100px);
+}
+
+.socialMedia li:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.socialMedia li:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.socialMedia li:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.socialMedia li:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+@keyframes slideInFromRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .socialMedia li:hover {
-  transform: scale(1.1);
+  transform: translateX(0) scale(1.1);
 }
 
 .socialMedia a {
@@ -40,14 +66,14 @@ h2 {
 }
 
 /* Responsividade Tablet */
-@media(max-width: 768px) {
-  .homeContainer{
+@media (max-width: 768px) {
+  .homeContainer {
     padding: 2rem;
   }
 }
 /* Responsividade celular */
-@media(max-width: 480px) {
-  .homeContainer{
+@media (max-width: 480px) {
+  .homeContainer {
     padding: 1rem;
   }
 
