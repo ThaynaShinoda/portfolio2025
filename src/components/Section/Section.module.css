@@ -1,0 +1,32 @@
+.section {
+  scroll-snap-align: start;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  font-size: 2rem;
+  padding-left: 12.5rem;
+  padding-right: 1.875rem;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+  .section {
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+    padding-top: 6.25rem;
+    font-size: 1.8rem;
+  }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+  .section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 5rem;
+    font-size: 1.5rem;
+  }
+}

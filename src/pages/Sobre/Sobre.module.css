@@ -1,0 +1,48 @@
+.aboutSection {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: var(--pink-900);
+}
+
+.text {
+  font-size: 1rem;
+  color: var(--black-400);
+  margin-bottom: 1rem;
+  line-height: 160%;
+}
+
+/* Responsividade Tablet */
+@media(max-width: 768px) {
+  .aboutSection {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .text {
+    font-size: 1rem;
+    line-height: 130%;
+  }
+}
+/* Responsividade celular */
+@media(max-width: 480px) {
+  .aboutSection {
+    padding: 0.5rem;
+  }
+
+  .title {
+    font-size: 0.8rem;
+  }
+
+  .text {
+    font-size: 0.8rem;
+    line-height: 100%;
+  }
+}

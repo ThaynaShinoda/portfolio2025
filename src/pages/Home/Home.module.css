@@ -1,0 +1,60 @@
+.socialMedia {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.875rem;
+  margin-top: 5rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.socialMedia li {
+  background-color: rgba(255, 255, 255, 0.527);
+  padding: 0.25rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.socialMedia li:hover {
+  transform: scale(1.1);
+}
+
+.socialMedia a {
+  color: var(--pink-900);
+}
+
+.socialMedia svg {
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.socialMedia svg:hover {
+  transform: scale(1.1);
+}
+
+/* Responsividade Tablet */
+@media(max-width: 768px) {
+  .homeContainer{
+    padding: 2rem;
+  }
+}
+/* Responsividade celular */
+@media(max-width: 480px) {
+  .homeContainer{
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}

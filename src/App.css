@@ -1,0 +1,48 @@
+html, body, #root, .container {
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+.container {
+  background-image: url('./assets/background_cherry_blossom.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+  scroll-snap-type: y mandatory;
+}
+
+.wrapper {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 1.875rem;
+}
+
+.content {
+  flex-grow: 1;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+  overflow-y: scroll; /* ainda permite scroll */
+}
+
+.content::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+/* Responsividade Tablet */
+@media(max-width: 768px) {
+
+}
+/* Responsividade celular */
+@media(max-width: 480px) {
+  .wrapper {
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 0rem;
+  }
+}
