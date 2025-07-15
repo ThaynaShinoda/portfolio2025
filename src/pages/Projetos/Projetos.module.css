@@ -90,9 +90,16 @@
 }
 /* Responsividade celular */
 @media(max-width: 480px) {
+  .projectsSection {
+    max-width: 40rem;
+    width: 100%;
+    padding: 2rem;
+  }
+
   .title {
     font-size: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.2rem;
+    margin-left: 0.5rem;
   }
 
   .card {
@@ -101,6 +108,10 @@
     max-width: 20rem;
     min-width: 10.5rem;
     height: 33.25rem;
+  }
+
+  .links a {
+    font-size: 0.8rem;
   }
 }
 

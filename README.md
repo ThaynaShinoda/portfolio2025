@@ -6,7 +6,7 @@
 
 **Um portfolio moderno e responsivo desenvolvido com React + Vite**
 
-[🚀 Ver Demo](https://portfolio2025.vercel.app) • [📧 Contato](mailto:thayrieshinoda@gmail.com)
+[🚀 Ver Demo](https://portfolio2025-gamma-vert.vercel.app/) • [📧 Contato](mailto:thayrieshinoda@gmail.com)
 
 </div>
 

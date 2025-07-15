@@ -43,6 +43,6 @@ html, body, #root, .container {
   .wrapper {
     max-width: 90rem;
     margin: 0 auto;
-    padding: 0rem;
+    padding: 0;
   }
 }
