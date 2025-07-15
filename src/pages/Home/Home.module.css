@@ -7,7 +7,8 @@
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
+  color: var(--pink-900);
 }
 
 h2 {
