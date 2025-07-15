@@ -98,23 +98,6 @@ src/
 
 ---
 
-## 📱 Responsividade
-
-O portfolio é 100% responsivo com três breakpoints principais:
-
-- **Desktop**: `> 768px` - Sidebar lateral, layout completo
-- **Tablet**: `≤ 768px` - Sidebar no topo, layout adaptado
-- **Mobile**: `≤ 480px` - Interface otimizada para celulares
-
-### Principais Adaptações Mobile:
-
-- Sidebar reposicionada no topo
-- Hanko (logo japonês) no canto superior esquerdo
-- Formulários e textos otimizados
-- Navegação touch-friendly
-
----
-
 ## 🎯 Destaques Técnicos
 
 ### Performance
