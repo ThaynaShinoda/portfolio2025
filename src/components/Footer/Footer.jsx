@@ -1,7 +1,5 @@
-import styles from './Footer.module.css'
+import styles from "./Footer.module.css";
 
 export function Footer() {
-  return(
-    <div className={styles.footerContainer}>~ RIE SHINODA ~</div>
-  )
+  return <div className={styles.footerContainer}>~ RIE SHINODA ~</div>;
 }

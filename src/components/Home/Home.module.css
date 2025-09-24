@@ -38,7 +38,7 @@
   padding-bottom: 1rem;
 }
 
-.gradientBorder{
+.gradientBorder {
   position: relative;
   display: inline-block;
   background: linear-gradient(45deg, var(--pink), var(--orange));
@@ -63,10 +63,9 @@
   border-radius: 50%;
   background: linear-gradient(45deg, var(--pink), var(--orange));
   filter: blur(15px);
-  opacity: 0.6; 
+  opacity: 0.6;
   z-index: 0;
 }
-
 
 .homeContainer h1,
 .homeContainer h2,
@@ -76,7 +75,6 @@
   opacity: 0;
   transform: translateX(-100px);
 }
-
 
 .socialMedia {
   display: flex;
@@ -164,7 +162,7 @@
   }
 
   .homeContainer h2 {
-  font-size: 1.5rem;
-  padding-top: 1rem;
-}
+    font-size: 1.5rem;
+    padding-top: 1rem;
+  }
 }

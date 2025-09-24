@@ -17,7 +17,10 @@
   list-style: none;
 }
 
-html, body, #root, .container {
+html,
+body,
+#root,
+.container {
   scroll-behavior: smooth;
 }
 

@@ -3,7 +3,7 @@ import screenNlw from "../../assets/nlw-agents-iniciante.png";
 import screenEfood from "../../assets/efood-ebac.png";
 import screenLetMeAsk from "../../assets/nlw-let-me-ask.png";
 import screenLandingPage from "../../assets/landing-page-uniformes.png";
-import screenLefContabilidade from "../../assets/lef-contabilidade.png"
+import screenLefContabilidade from "../../assets/lef-contabilidade.png";
 const projects = [
   {
     title: "eSports - Assistente de Meta (NLW20)",
