@@ -1,0 +1,170 @@
+.homeContainer {
+  background-color: var(--gray-900);
+
+  width: 100%;
+  max-width: 1120px;
+
+  margin: 0 auto;
+  padding: 12rem 1.5rem;
+  text-align: center;
+}
+
+.title svg path {
+  fill: url(#pinkGradient);
+  fill-opacity: 0;
+  stroke: url(#pinkGradient);
+  stroke-width: 0.3;
+  stroke-dasharray: 190;
+  stroke-dashoffset: 190;
+  animation: textAnimation 2s ease-in-out 1 forwards;
+}
+
+@keyframes textAnimation {
+  0% {
+    stroke-dashoffset: 190;
+    fill-opacity: 0;
+  }
+  80% {
+    stroke-dashoffset: 0;
+    fill-opacity: 0;
+  }
+  100% {
+    fill-opacity: 1;
+  }
+}
+
+.homeContainer h2 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.gradientBorder{
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(45deg, var(--pink), var(--orange));
+  padding: 3px;
+  margin-top: 2rem;
+  border-radius: 50%;
+}
+
+.gradientBorder img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+.gradientBorder::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: linear-gradient(45deg, var(--pink), var(--orange));
+  filter: blur(15px);
+  opacity: 0.6; 
+  z-index: 0;
+}
+
+
+.homeContainer h1,
+.homeContainer h2,
+.gradientBorder {
+  transition: all 0.3s ease;
+  animation: slideInFromLeft 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
+
+.socialMedia {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.socialMedia li {
+  background: rgba(255, 255, 255, 0.76);
+  padding: 0.25rem;
+  border-radius: 10px;
+
+  transition: all 0.3s ease;
+  animation: slideInFromRight 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateX(100px);
+}
+
+.socialMedia li:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.socialMedia li:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.socialMedia li:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.socialMedia li:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+@keyframes slideInFromRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.socialMedia li:hover {
+  background: linear-gradient(45deg, var(--orange), var(--pink));
+  transform: scale(1.1);
+}
+
+.socialMedia a {
+  color: var(--gray-900);
+}
+
+.socialMedia a:hover {
+  color: var(--white);
+}
+
+.socialMedia svg {
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.socialMedia svg:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+  .homeContainer {
+    padding: 8rem 1.5rem;
+  }
+
+  .title svg {
+    width: 300px;
+    height: 40px;
+  }
+
+  .homeContainer h2 {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+}

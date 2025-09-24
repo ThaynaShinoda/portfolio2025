@@ -1,14 +1,9 @@
-import styles from "./Projetos.module.css";
+import styles from "./Projects.module.css";
 import screenNlw from "../../assets/nlw-agents-iniciante.png";
 import screenEfood from "../../assets/efood-ebac.png";
-import screenContactList from "../../assets/contact-list-ebac.png";
 import screenLetMeAsk from "../../assets/nlw-let-me-ask.png";
 import screenLandingPage from "../../assets/landing-page-uniformes.png";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import { Pagination, Autoplay } from "swiper/modules";
-
+import screenLefContabilidade from "../../assets/lef-contabilidade.png"
 const projects = [
   {
     title: "eSports - Assistente de Meta (NLW20)",
@@ -83,65 +78,55 @@ const projects = [
     repo: "https://github.com/ThaynaShinoda/landing-page-uniformes",
   },
   {
-    title: "Lista de contatos",
+    title: "L&F Contabilidade - Landing Page Contabilidade",
     description:
       "Aplicação de gerenciamento de contatos feita como exercício do módulo 32 da EBAC. Permite visualizar, adicionar, editar e remover contatos.",
-    tech: ["React", "TypeScript", "Styled-components", "Redux", "Vite"],
-    img: screenContactList,
-    live: "https://lista-contatos-amber.vercel.app/",
-    repo: "https://github.com/ThaynaShinoda/lista-contatos",
+    tech: ["ReactJS", "CSS Module", "Phosphor Icons", "Vite"],
+    img: screenLefContabilidade,
+    live: "https://lefcontabilidade.com.br/",
+    repo: "https://github.com/ThaynaShinoda/lef-contabilidade",
   },
 ];
 
-export function Projetos() {
+export function Projects() {
   return (
-    <section className={styles.projectsSection}>
-      <h2 className={styles.title}>Meus Projetos</h2>
-      <div className={styles.sliderWrapper}>
-        <Swiper
-          modules={[Pagination, Autoplay]}
-          spaceBetween={30}
-          slidesPerView={1}
-          pagination={{ clickable: true }}
-          loop={true}
-          loopFillGroupWithBlank={true}
-          autoplay={{delay: 3000, disableOnInteraction: false}}
-          style={{ paddingBottom: "2rem" }}
-        >
-          {projects.map((project) => (
-            <SwiperSlide key={project.title}>
-              <div className={styles.card}>
-                <img src={project.img} alt={project.title} />
-                <h3 className={styles.titleCard}>{project.title}</h3>
-                <p className={styles.textCard}>{project.description}</p>
-                <div className={styles.techList}>
-                  {project.tech.map((t) => (
-                    <span key={t}>{t}</span>
-                  ))}
-                </div>
-                <div className={styles.links}>
-                  {project.live && (
-                    <a href={project.live} target="_blank" rel="noreferrer">
-                      🔗 Ver Projeto
-                    </a>
-                  )}
-                  <a href={project.repo} target="_blank" rel="noreferrer">
-                    💻 Código Web
-                  </a>
-                  {project.repoServer && (
-                    <a
-                      href={project.repoServer}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      🖥️ Código Server
-                    </a>
-                  )}
-                </div>
+    <section className={styles.projectsContainer} id="projects">
+      <h2 className={`${styles.title} ${styles.autoShow}`}>Meus Projetos</h2>
+      <div className={styles.projectsList}>
+        {projects.map((project, index) => (
+          <div
+            className={`${styles.card}${
+              index % 2 !== 0 ? " " + styles.reverse : ""
+            } ${styles.autoShow}`}
+            key={project.title}
+          >
+            <img src={project.img} alt={project.title} />
+            <div className={styles.infosCard}>
+              <h3 className={styles.titleCard}>{project.title}</h3>
+              <p className={styles.textCard}>{project.description}</p>
+              <div className={styles.techList}>
+                {project.tech.map((t) => (
+                  <span key={t}>{t}</span>
+                ))}
               </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+              <div className={styles.links}>
+                {project.live && (
+                  <a href={project.live} target="_blank" rel="noreferrer">
+                    🔗 Ver Projeto
+                  </a>
+                )}
+                <a href={project.repo} target="_blank" rel="noreferrer">
+                  💻 Código Web
+                </a>
+                {project.repoServer && (
+                  <a href={project.repoServer} target="_blank" rel="noreferrer">
+                    🖥️ Código Server
+                  </a>
+                )}
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );

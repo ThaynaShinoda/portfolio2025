@@ -1,20 +1,31 @@
 .container {
+  background-color: var(--gray-900);
+
   width: 100%;
-  max-width: 50rem;
+  max-width: 1000px;
+
   margin: 0 auto;
+  padding: 5rem 1.5rem;
 }
 
 .title {
-  margin-bottom: 2rem;
-  color: var(--pink-900);
+  font-size: 2rem;
+  padding-bottom: 2rem;
+  background: linear-gradient(90deg, var(--pink), var(--orange));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
 }
 
 .form {
-  max-width: 37.5rem;
+  max-width: 30rem;
   width: 100%;
   display: flex;
   flex-direction: column;
-  font-family: "TikTok Sans", sans-serif;
+  justify-content: center;
+  font-family: Roboto, sans-serif;
+  margin: 0 auto;
 }
 
 .input {
@@ -22,14 +33,16 @@
   height: 2.125rem;
   border-radius: 4px;
   padding: 0 0.5rem;
-  font-family: "TikTok Sans", sans-serif;
+  font-family: Roboto, sans-serif;
   outline: none;
   border: 2px solid transparent;
   transition: border-color 0.3s ease;
+
+  background-color: var(--gray-700);
 }
 
 .input:focus {
-  border-color: var(--pink-900);
+  border-color: var(--pink);
 }
 
 .textarea {
@@ -43,48 +56,40 @@
   outline: none;
   border: 2px solid transparent;
   transition: border-color 0.3s ease;
+
+  background-color: var(--gray-700);
 }
 
 .textarea:focus {
-  border-color: var(--pink-900);
+  border-color: var(--pink);
 }
 
 .button {
-  height: 2.125rem;
+  padding: 0.5rem;
   border-radius: 8px;
   border: 0;
   cursor: pointer;
-  background-color: var(--pink-900);
+  background: linear-gradient(90deg, var(--pink), var(--orange), var(--pink));
   font-size: 1rem;
   font-weight: bold;
   color: var(--white);
-  transition: background-color, transform 0.8s;
+  width: 20rem;
+  margin: 0 auto;
+
+  transition: all 0.5s ease-in;
 }
 
 .button:hover {
-  background-color: #ec2568;
-  transform: scale(1.01);
+  background: linear-gradient(90deg, var(--orange), var(--pink),var(--orange));
+  width: 100%;
 }
 
 /* Responsividade Tablet */
 @media (max-width: 768px) {
-  .container {
-    max-width: 30rem;
-  }
-
-  .title {
-    margin-bottom: 2rem;
-    font-size: 2rem;
-  }
 }
 /* Responsividade celular */
 @media (max-width: 480px) {
-  .container {
-    max-width: 20rem;
-  }
-
   .title {
-    margin-bottom: 1.5rem;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 }

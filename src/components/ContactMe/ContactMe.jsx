@@ -1,8 +1,8 @@
 import { useState } from "react";
-import styles from "./Contatos.module.css";
+import styles from "./ContactMe.module.css";
 import emailJs from "@emailjs/browser";
 
-export function Contatos() {
+export function ContactMe() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -42,8 +42,8 @@ export function Contatos() {
   }
 
   return (
-    <div className={styles.container}>
-      <h4 className={styles.title}>Entre em contato, envie um e-mail 🌸</h4>
+    <div className={styles.container} id="contactMe">
+      <h4 className={styles.title}>Entre em contato, envie um e-mail</h4>
 
       <form className={styles.form} onSubmit={sendEmail}>
         <input

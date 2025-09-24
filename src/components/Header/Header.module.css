@@ -1,0 +1,49 @@
+.headerContainer {
+  background: var(--gray-700);
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+
+.headerContent {
+  width: 100%;
+  max-width: 1120px;
+
+  margin: 0 auto;
+  padding: 0.5rem 1.5rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.menu li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+.menu li a:hover {
+  background: linear-gradient(90deg, var(--orange), var(--pink));
+  -webkit-background-clip: text; /* Faz o gradiente "recortar" no texto */
+  background-clip: text; /* Standard property for compatibility */
+  -webkit-text-fill-color: transparent; /* Deixa o fundo visível no texto */
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 480px) {
+  .menu {
+    gap: 1rem;
+  }
+  .menu li a {
+    font-size: 0.75rem;
+  }
+}

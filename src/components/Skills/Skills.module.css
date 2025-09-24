@@ -1,0 +1,125 @@
+.skillsSection {
+  background-color: var(--gray-900);
+
+  width: 100%;
+  max-width: 1000px;
+
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+  background: linear-gradient(90deg, var(--pink), var(--orange));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.content {
+  text-align: start;
+}
+
+.text {
+  font-size: 1rem;
+  line-height: 160%;
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+
+.skillList {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  text-align: center;
+}
+
+.skillItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: var(--gray-700);
+  color: var(--white);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  font-size: 1rem;
+}
+
+.stars {
+  font-size: 2rem;
+  color: var(--gray-100);
+}
+
+.filled {
+  color: var(--pink);
+}
+
+.empty {
+  color: var(--gray-100);
+}
+
+.autoShow {
+  animation: autoShowAnimation both;
+  animation-timeline: view(70% 5%);
+}
+@keyframes autoShowAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(200px) scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Responsividade Tablet */
+@media (max-width: 768px) {
+}
+
+/* Responsividade celular */
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .content {
+    gap: 0.5rem;
+  }
+
+  .text {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .skillItem {
+    font-size: 0.8rem;
+  }
+
+  .skillList {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .autoShow {
+    animation: autoShowAnimation both;
+    animation-timeline: view(90% 5%);
+  }
+  @keyframes autoShowAnimation {
+    from {
+      opacity: 0;
+      transform: translateY(200px) scale(0.3);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+}
