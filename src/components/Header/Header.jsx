@@ -9,16 +9,16 @@ export function Header() {
             <a href="#home">Home</a>
           </li>
           <li>
-            <a href="#aboutme">About Me</a>
+            <a href="#aboutme">Sobre mim</a>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <a href="#projects">Projetos</a>
           </li>
           <li>
             <a href="#skills">Skills</a>
           </li>
           <li>
-            <a href="#contactMe">Contact Me</a>
+            <a href="#contactMe">Contato</a>
           </li>
         </ul>
       </div>

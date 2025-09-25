@@ -83,7 +83,7 @@ const projects = [
   {
     title: "L&F Contabilidade - Landing Page Contabilidade",
     description:
-      "Aplicação de gerenciamento de contatos feita como exercício do módulo 32 da EBAC. Permite visualizar, adicionar, editar e remover contatos.",
+      "Landing page desenvolvida para uma empresa de contabilidade.",
     tech: ["ReactJS", "CSS Module", "Phosphor Icons", "Vite"],
     img: screenLefContabilidade,
     live: "https://lefcontabilidade.com.br/",
