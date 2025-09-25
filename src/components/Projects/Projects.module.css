@@ -99,6 +99,9 @@
 
 /* Responsividade Tablet */
 @media (max-width: 768px) {
+  .card {
+    text-align: center;
+  }
 }
 /* Responsividade celular */
 @media (max-width: 480px) {
@@ -133,6 +136,11 @@
     margin: 0 auto;
   }
 
+  .infsCard {
+    align-items: center;
+    text-align: center;
+  }
+  
   .card.reverse .infosCard {
     align-items: center;
     text-align: center;
