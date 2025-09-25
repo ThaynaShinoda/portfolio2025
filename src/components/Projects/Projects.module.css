@@ -108,9 +108,10 @@
   }
 
   .card {
+    display: grid;
     grid-template-columns: 1fr;
-
     border-bottom: 2px solid var(--gray-700);
+    text-align: center;
   }
 
   .card.reverse {
