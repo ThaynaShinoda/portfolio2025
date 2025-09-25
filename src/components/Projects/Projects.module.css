@@ -97,21 +97,6 @@
   font-size: 1rem;
 }
 
-.autoShow {
-  animation: autoShowAnimation both;
-  animation-timeline: view(80% 5%);
-}
-@keyframes autoShowAnimation {
-  from {
-    opacity: 0;
-    transform: translateY(200px) scale(0.3);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
 /* Responsividade Tablet */
 @media (max-width: 768px) {
 }
@@ -178,20 +163,5 @@
 
   .card.reverse .techList {
     justify-content: center;
-  }
-
-  .autoShow {
-    animation: autoShowAnimation both;
-    animation-timeline: view(100% 5%);
-  }
-  @keyframes autoShowAnimation {
-    from {
-      opacity: 0;
-      transform: translateY(200px) scale(0.3);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0) scale(1);
-    }
   }
 }

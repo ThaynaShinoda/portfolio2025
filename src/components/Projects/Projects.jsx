@@ -1,9 +1,12 @@
+/* eslint-disable no-unused-vars */
+import { motion } from "motion/react";
 import styles from "./Projects.module.css";
 import screenNlw from "../../assets/nlw-agents-iniciante.png";
 import screenEfood from "../../assets/efood-ebac.png";
 import screenLetMeAsk from "../../assets/nlw-let-me-ask.png";
 import screenLandingPage from "../../assets/landing-page-uniformes.png";
 import screenLefContabilidade from "../../assets/lef-contabilidade.png";
+
 const projects = [
   {
     title: "eSports - Assistente de Meta (NLW20)",
@@ -89,15 +92,30 @@ const projects = [
 ];
 
 export function Projects() {
+  const animationProps = {
+    initial: { opacity: 0, y: 200, scale: 0.3 },
+    whileInView: { opacity: 1, y: 0, scale: 1 },
+    transition: {
+      duration: 0.8,
+      ease: [0.22, 1, 0.36, 1],
+    },
+    viewport: {
+      once: false,
+      amount: 0.7,
+      margin: "30% 0px 0px 0px",
+    },
+  };
+  
   return (
     <section className={styles.projectsContainer} id="projects">
-      <h2 className={`${styles.title} ${styles.autoShow}`}>Meus Projetos</h2>
+      <motion.h2 className={styles.title} {...animationProps}>Meus Projetos</motion.h2>
       <div className={styles.projectsList}>
         {projects.map((project, index) => (
-          <div
+          <motion.div
             className={`${styles.card}${
               index % 2 !== 0 ? " " + styles.reverse : ""
-            } ${styles.autoShow}`}
+            }`}
+            {...animationProps}
             key={project.title}
           >
             <img src={project.img} alt={project.title} />
@@ -125,7 +143,7 @@ export function Projects() {
                 )}
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

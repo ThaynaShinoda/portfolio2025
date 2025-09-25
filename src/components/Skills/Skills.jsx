@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+import { motion } from "motion/react"; 
 import styles from "./Skills.module.css";
 
 const skills = [
@@ -14,11 +16,25 @@ const skills = [
 ];
 
 export function Skills() {
+  const animationProps = {
+    initial: { opacity: 0, y: 200, scale: 0.3 },
+    whileInView: { opacity: 1, y: 0, scale: 1 },
+    transition: {
+      duration: 0.8,
+      ease: [0.22, 1, 0.36, 1],
+    },
+    viewport: {
+      once: false,
+      amount: 0.7,
+      margin: "30% 0px 0px 0px",
+    },
+  };
+
   return (
     <section className={styles.skillsSection} id="skills">
-      <h2 className={`${styles.title} ${styles.autoShow}`}>Habilidades</h2>
+      <motion.h2 className={styles.title} {...animationProps}>Habilidades</motion.h2>
       <div className={styles.content}>
-        <div className={`${styles.text} ${styles.autoShow}`}>
+        <motion.div className={styles.text} {...animationProps}>
           <p>
             Ao longo da minha formação como desenvolvedora, tenho focado
             principalmente em tecnologias Front-end, com maior domínio em HTML,
@@ -37,8 +53,8 @@ export function Skills() {
             e Python, reconhecendo sua importância no mercado e me esforçando
             para melhorar gradualmente nesses pontos.
           </p>
-        </div>
-        <ul className={styles.skillList}>
+        </motion.div>
+        <motion.ul className={styles.skillList} {...animationProps}>
           {skills.map((skill) => (
             <li key={skill.name} className={styles.skillItem}>
               <span>{skill.name}</span>
@@ -54,7 +70,7 @@ export function Skills() {
               </div>
             </li>
           ))}
-        </ul>
+        </motion.ul>
       </div>
     </section>
   );
