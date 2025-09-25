@@ -32,11 +32,6 @@
   direction: rtl;
 }
 
-.card.reverse img,
-.card.reverse .infosCard {
-  direction: ltr;
-}
-
 .card img {
   width: 100%;
   max-width: 518px;
@@ -51,6 +46,11 @@
   justify-content: center;
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.card.reverse img,
+.card.reverse .infosCard {
+  direction: ltr;
 }
 
 .card.reverse .infosCard {
@@ -108,7 +108,6 @@
   }
 
   .card {
-    display: grid;
     grid-template-columns: 1fr;
 
     border-bottom: 2px solid var(--gray-700);
@@ -129,15 +128,8 @@
     max-width: 300px;
     min-height: 200px;
     object-fit: cover;
-  }
 
-  .infosCard {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 0 auto;
   }
 
   .card.reverse .infosCard {
@@ -153,7 +145,6 @@
 
   .textCard {
     font-size: 0.8rem;
-    margin-bottom: 1rem;
     text-align: center;
   }
 
