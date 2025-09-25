@@ -136,11 +136,11 @@
     margin: 0 auto;
   }
 
-  .infsCard {
+  .infosCard {
     align-items: center;
     text-align: center;
   }
-  
+
   .card.reverse .infosCard {
     align-items: center;
     text-align: center;
